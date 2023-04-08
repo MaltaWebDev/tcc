@@ -5,7 +5,8 @@
 }
 
 body {
-  font-family: "Noto Serif", serif;
+  font-family: "Open Sans", sans-serif;
+  color: #003e53;
 }
 
 .navbar {
@@ -31,6 +32,7 @@ body {
 .menu a {
   text-decoration: none;
   color: #003e53;
+  font-family: "Noto Serif", serif;
   font-size: 1.2em;
   font-weight: 600;
 }
@@ -81,4 +83,165 @@ body {
   font-weight: 500;
   text-align: center;
   margin: 10px 0;
+}
+
+.two-col-section {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+}
+
+.left-col,
+.right-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-col .notepad-image {
+  width: 100%;
+  max-width: 500px;
+}
+
+.right-col {
+  padding-left: 20px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.right-col h2 {
+  font-size: 3rem;
+  font-family: "Noto Serif", serif;
+  margin-bottom: 1.2rem;
+  margin-top: 2rem;
+}
+
+.right-col img {
+  margin-bottom: 2rem;
+}
+
+.right-col p {
+  text-align: left;
+  margin-bottom: 2rem;
+  margin-right: 16rem;
+  font-weight: 600;
+}
+
+.cta-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 200px;
+}
+
+.cta-button {
+  display: inline-block;
+  font-family: "Noto Serif", serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #f4f4f4;
+  background-color: #003e53;
+  padding: 1.6rem 2.4rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.cta-button:hover {
+  background-color: #005a74;
+}
+
+.four-col-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("./img/stats-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50px 0;
+  color: white;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Noto Serif", serif;
+  text-align: center;
+}
+
+.col h2 {
+  margin-bottom: 10px;
+  font-size: 3.6rem;
+}
+
+.col p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* Add styles for the footer */
+footer {
+  background-color: white;
+  padding: 20px 0;
+  margin-right: 10rem;
+  margin-left: 10rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: "Noto Serif", serif;
+  color: #bc9c67;
+  gap: 1rem;
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: inherit;
+  margin: 5px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+footer hr {
+  margin-bottom: 1rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  margin-right: 10rem;
+}
+
+.social-icons a {
+  margin-left: 3.2rem;
+}
+
+.social-icons img {
+  width: 30px;
+  height: auto;
+}
+
+/* Add a responsive rule for smaller screens */
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
 }
